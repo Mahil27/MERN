@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Blue Navbar with Search</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #002147; 
+      overflow: hidden;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background-color: #d4ed13;
+      border-radius: 4px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 4px;
+      padding: 5px 10px;
+    }
+
+    .search-box input[type="text"] {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 5px;
+      background-color: white;
+      color: black;
+    }
+
+    .search-box .icon {
+      font-size: 18px;
+      color: #002147;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div>
+      <a class="active" href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></span>
+    </div>
+  </div>
+
+</body>
+</html>
