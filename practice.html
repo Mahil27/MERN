@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Superman Circles</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search {
+      margin-top: 20px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    fieldset {
+      margin-top: 30px;
+      width: 180px;
+      height: 280px;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    legend {
+      padding: 0 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .circle {
+      width: 60px;
+      height: 60px;
+      border: 2px solid black;
+      border-radius: 50%;
+      background-color: transparent;
+      margin: 10px 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <input class="search" type="text" placeholder="Search...">
+
+  <fieldset>
+    <legend>Boxes</legend>
+    <div class="circle">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" alt="Superman">
+    </div>
+    <div class="circle">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" alt="Superman">
+    </div>
+    <div class="circle">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png" alt="Superman">
+    </div>
+  </fieldset>
+
+</body>
+</html>
